@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Submit a Question | Would You Rather</title>
+  <meta name="description" content="Submit a question to have it be in the game!">
+  <meta name="author" content="Isabella Dickenson">
+
+  <meta property="og:title" content="Would You Rather Game">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Submit a question to have it be in the game!">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Bootstrap for Layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/d0752a3902.js" crossorigin="anonymous"></script>
+  <!-- Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/pwk0bkl.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X4KZPXP3VB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X4KZPXP3VB');
+</script>
+</head>
+
+<body>
+        <header>
+            <nav>
+              <a href="/index.html" class="headera">Home</a>
+              <a href="/submit-question.html" class="headera">Submit a Question</a>
+            </nav>
+            <img src="img/rather.jpg" alt="Would you rather hero image">
+        </header>
+
+
+<div class="container-fluid">
+
+<div class="contact center">
+
+<div class="contacttext">
+	 <h2>Submit a Question</h2>
+  <p class="contactinfo">Have a good idea for a question? Submit it below and it could be put into the game!</p>
+</div>
+  <!-- webform -->
+  <form name="contact" method="POST" data-netlify="true">
+    <p class="contactinfo">
+      <label>Name: <input type="text" name="name" /></label>
+    </p>
+    <p class="contactinfo">
+      <label>Email: <input type="email" name="email" /></label>
+    </p>
+    <p class="contactinfo">
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p class="contactinfo">
+      <button type="submit"><b>Submit</b></button>
+    </p>
+  </form>
+</div>
+</div>
+
+  <footer class="d-flex">
+    <div class="footercontent">
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+            <i class="fa-brands fa-android"></i>
+        </div>
+        <div>
+            <h4> &copy;	would you rather, 2022</h4>
+        </div>
+        <div>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

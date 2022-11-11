@@ -1,0 +1,419 @@
+:root {
+    --primary-color: #033f5f;
+    --second-color: #007CBC;
+    --dark:#434343;
+    --white: #ffffff;
+    --highlight-color: #f5ba36;
+    --background-color: #FFF9F2;
+}
+* {
+    box-sizing:border-box;
+    margin: 0!important;
+    padding: 0!important;
+}
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    width:100%;
+    height: 100%;
+    position:relative;
+    padding-bottom: 2.5rem!important;
+}
+.container-fluid {
+    margin: 0!important;
+    padding: 0!important;
+    min-height: 79vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: var(--white);
+    font-family: blenny, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:40px;
+}
+h2{
+    font-size:30px;
+    color: var(--primary-color);
+    font-family: blenny, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--dark);
+}
+h3{
+    font-size:1.5rem;
+    color: var(--white);
+    font-family: open-sans, sans-serif;
+}
+h4{
+    color: var(--white);
+    font-family: blenny, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+h5 {
+    font-size:18px;
+    color: var(--white);
+    font-family: open-sans, sans-serif;
+}
+.game-category h2 {
+    font-size:18px;
+    color: var(--white);
+    font-family: open-sans, sans-serif;
+}
+p, ul, ol {
+    font-size:1.25rem;
+    line-height: 1.75rem;
+    color: var(--nuetral-grey);
+}
+
+
+nav {
+    width:100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index:1;
+    padding: 0 10px!important;
+}
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: open-sans, sans-serif;
+    font-weight: 900;
+    font-size:18px;
+}
+
+.headera:hover {
+    color: #434343!important;
+}
+.headera {
+ font-size:15px;
+}
+
+img {
+    max-width:100%;
+}
+
+/*       landing page         */
+.landing {
+    display:flex;
+    flex-direction: column;
+}
+.info {
+    text-align:center;
+    margin: 20px!important;
+}
+.info p {
+    color: var(--dark);
+}
+
+.game-category {
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width:85%;
+    margin:auto!important; 
+}
+
+.sillycard,.icebreakercard, .deepcard  {
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 15px 30px!important;
+    border-radius: 10px;;
+    text-align: center;
+    font-size: 16px;
+    width:100%;
+    margin: 10px 15px!important;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    transition: all .5s ease; /* back to normal */
+}
+
+.sillycard:hover,.icebreakercard:hover, .deepcard:hover  {
+    color:white;
+    transform: translate3D(0,-1px,0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+    transition: all .4s ease; /* zoom in */
+}
+
+.sillycard i ,.icebreakercard i , .deepcard i  {
+    font-size:35px!important;
+    margin-bottom:2px!important;
+}
+
+.gametitle {
+    margin-bottom:5px!important;
+    font-size:19px;
+    display:block;
+}
+.sillycard {
+    background-color: #B75FDF;
+}
+
+.icebreakercard{
+    background-color: #F65E9C;
+}
+
+.deepcard{
+    background-color: #EC4732;
+}
+
+/*       game pages         */
+.cardsg, .cardig, .carddg {
+    width:87%;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px!important;
+    border-radius:12px;
+    text-align:center;
+    padding: 0 15px!important;
+}
+
+.cardsg {
+    background-color: #B75FDF;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 25%);
+    transition: all .5s ease; /* back to normal */
+}
+
+.cardig {
+    background-color: #F65E9C;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 25%);
+}
+.carddg{
+    background-color: #EC4732;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 25%);
+}
+
+.cardsg:hover, .cardig:hover, .carddg:hover {
+    color:white;
+    transform: translate3D(0,-1px,0) scale(1.03);
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 25%);
+    transition: all .4s ease; /* zoom in */
+}
+
+
+.or {
+    position:absolute;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    z-index:-1;
+}
+
+.titlegame {
+    padding-bottom:20px!important;
+    font-size:33px;
+    text-align:center;
+    margin-top:-30px!important;
+
+}
+
+.back {
+    text-decoration: none;
+    margin-left: 30px!important;
+    display: inline-block;
+    z-index:1;
+  }
+  .back p {
+      color: var(--dark);
+      font-size:13px;
+  }
+
+/*       footer         */
+footer {
+  background-color: #F35881;
+  position: absolute;
+  bottom: 0!important;
+  width: 100%;
+  height: 2.7rem;
+  padding: 0 10px!important;
+}
+
+.footercontent {
+    width:100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.footercontent i {
+    color: var(--white);
+    font-size:25px;
+}
+
+/*       Suggest a Question      */
+
+.center {
+    text-align:center;
+}
+.contact h2 {
+    margin-bottom: 10px!important;
+    margin-top: 20px!important;
+}
+.contactinfo {
+    width:70%;
+    margin: 0 auto!important;
+    font-size: 18px;
+}
+
+.contacttext {
+    margin-bottom: 20px!important;
+}
+
+/* web form */
+.webform {
+    margin-left: 0px;;
+    margin-top: 12px!important;
+    
+}
+form {
+  /* Center the form on the page */
+  margin: 0 auto!important;
+  width: 100%;
+  /* Form outline */
+}
+
+input {
+	width:100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+    font-family: 'Open Sans', sans-serif;
+}
+form li + li {
+  margin-top: 15px;
+}
+label {
+  display: inline-block;
+  width:    100%;
+  text-align: left;
+}
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+    height: 2em;
+
+  /* Uniform text field size */
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+textarea {
+  vertical-align: top;
+  height: 100px;
+}
+
+button {
+    background-color: #F35881;
+    border: none;
+    color: white;
+    padding: 10px 15px!important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 9px;
+    margin-top: 10px!important;
+    margin-bottom: 20px!important;
+}
+
+
+/*       Desktop Layout       */
+
+@media screen and (min-width: 768px){
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        min-height: 71vh;}
+    .headera {
+            font-size:19px;}
+}
+
+@media screen and (min-width: 1055px){
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        min-height: 62vh;}
+}
+
+@media screen and (min-width: 1300px){
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        min-height: 56.5vh;}
+
+        .game-category {
+            width:75%;
+        } 
+}
+
+@media screen and (min-width: 850px){
+    .game-category {
+        width:83%;
+    } 
+    .titlegame {
+        font-size:38px;
+    }
+    .info{
+        width:83%;
+        margin:auto!important;
+        margin-bottom: 30px!important;
+    } 
+
+    .back {
+        text-decoration: none;
+        margin-left: 40px!important;
+        
+      }
+      .back p {
+        color: var(--dark);
+        font-size:17px;
+    }
+
+    .game-category {
+        flex-direction: row;
+    }
+
+    .sillycard,.icebreakercard, .deepcard  {
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 768px){
+.or {
+    display:none;
+}
+
+
+}
